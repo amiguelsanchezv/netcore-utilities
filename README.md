@@ -23,6 +23,26 @@ dotnet run input.example.csv output_{0}.csv
 
 For more details, see the [utility's README](./get-activity-inventory-ofsc/README.md).
 
+### [Create Service Request OFSC](./create-service-request-ofsc/)
+
+Creates service requests in bulk in Oracle Field Service Cloud (OFSC) by reading data from a CSV file.
+
+**Features:**
+- Reads activity IDs and request types from CSV files
+- Creates service requests via OFSC API
+- Automatically sets the date field to today's date
+- Exports results to CSV format with success/error status
+
+**Quick Start:**
+```bash
+cd create-service-request-ofsc
+dotnet restore
+dotnet build
+dotnet run input.example.csv output_{0}.csv
+```
+
+For more details, see the [utility's README](./create-service-request-ofsc/README.md).
+
 ## Requirements
 
 - .NET 10 SDK or higher
